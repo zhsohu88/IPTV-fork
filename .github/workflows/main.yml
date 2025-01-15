@@ -1,12 +1,12 @@
 name: Daily Update
 
 on:
-  schedule:
-    - cron: '45 21 * * *'
+  # schedule:
+    # - cron: '45 21 * * *'
   workflow_dispatch:
-    branches:
-      - main
-
+    # branches:
+      # - main
+  
 jobs:
   run_script:
     runs-on: ubuntu-latest
