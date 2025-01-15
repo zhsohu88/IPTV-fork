@@ -6195,19 +6195,175 @@ P2p://generationnexxxt.com:19806/02870872a71c4d2296b35dd02d5a9973
 http://220.134.74.149:2399/udp/224.1.4.40:11111
 #EXTINF:-1 tvg-id="2" tvg-name="靖天戏剧" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/靖天戏剧.png" group-title="影视频道",靖天戏剧
 http://220.134.74.149:2399/udp/230.1.2.163:11111
-#EXTINF:-1 tvg-id="1" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="影视频道",JJ斗地主
+#EXTINF:-1 tvg-id="1" tvg-name="朝鲜新闻" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/朝鲜新闻.png" group-title="韩国频道",朝鲜新闻
+http://119.77.96.184:1935/chn05/chn05/chunklist_w644291506.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩·BBS佛教" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·BBS佛教.png" group-title="韩国频道",韩·BBS佛教
+http://bbstv.clouducs.com:1935/bbstv-live/livestream/chunklist_w1403706733.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩·EBS-1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-1.png" group-title="韩国频道",韩·EBS-1
+http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/groundwavetablet500k.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="韩·EBS-1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-1.png" group-title="韩国频道",韩·EBS-1
+http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="韩·EBS-1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-1.png" group-title="韩国频道",韩·EBS-1
+http://ebsonairios.ebs.co.kr/plus1tablet500k/tablet500k/plus1tablet500k.index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩·EBS-2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-2.png" group-title="韩国频道",韩·EBS-2
+http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="韩·EBS-2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-2.png" group-title="韩国频道",韩·EBS-2
+http://ebsonairios.ebs.co.kr/plus2tablet500k/tablet500k/plus2tablet500k.index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩·EBS少儿" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS少儿.png" group-title="韩国频道",韩·EBS少儿
+http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/chunklist_w1965791004.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩·SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·SBS.png" group-title="韩国频道",韩·SBS
+http://1.245.74.5:1935/live/tv/.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩·HotPlusTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·HotPlusTV.png" group-title="韩国频道",韩·HotPlusTV
+http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="美·NASA" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/美·NASA.png" group-title="韩国频道",美·NASA
+https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master_2000.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="美·NASA" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/美·NASA.png" group-title="韩国频道",美·NASA
+https://ntv2.akamaized.net/hls/live/2013923/NASA-NTV2-HLS/master_2000.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="希·FoxTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/希·FoxTV.png" group-title="韩国频道",希·FoxTV
+http://live.streams.ovh:1935/foxtv/foxtv/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="越·HBTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/越·HBTV.png" group-title="韩国频道",越·HBTV
+http://hoabinhtvlive.746b3ddb.cdnviet.com/hoabinhtv/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="耀才财经" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/耀才财经.png" group-title="韩国频道",耀才财经
+http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="耀才财经" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/耀才财经.png" group-title="韩国频道",耀才财经
+http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000?zgangd
+#EXTINF:-1 tvg-id="3" tvg-name="耀才财经" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/耀才财经.png" group-title="韩国频道",耀才财经
+http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="耀才财经" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/耀才财经.png" group-title="韩国频道",耀才财经
+http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000
+#EXTINF:-1 tvg-id="5" tvg-name="耀才财经" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/耀才财经.png" group-title="韩国频道",耀才财经
+https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩国-KBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩国-KBS.png" group-title="韩国频道",韩国-KBS
+https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/01.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩国-EBS1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩国-EBS1.png" group-title="韩国频道",韩国-EBS1
+http://ebsonairios.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩国-EBS2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩国-EBS2.png" group-title="韩国频道",韩国-EBS2
+http://ebsonairios.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩国-EBSe" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩国-EBSe.png" group-title="韩国频道",韩国-EBSe
+http://ebsonairios.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="韩国-KCTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩国-KCTV.png" group-title="韩国频道",韩国-KCTV
+http://119.77.96.184:1935/chn05/chn05/chunklist_w1306745753.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="Arirang" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Arirang.png" group-title="韩国频道",Arirang
+http://220.134.74.149:2399/udp/224.1.4.184:11111
+#EXTINF:-1 tvg-id="2" tvg-name="Arirang" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Arirang.png" group-title="韩国频道",Arirang
+http://220.134.74.149:2399/udp/224.1.4.92:11111
+#EXTINF:-1 tvg-id="3" tvg-name="Arirang" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Arirang.png" group-title="韩国频道",Arirang
+mitv://generationnexxxt.com:19806/853704c2f9a442e7a1532038f14d8d00
+#EXTINF:-1 tvg-id="4" tvg-name="Arirang" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Arirang.png" group-title="韩国频道",Arirang
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b656000_sleng.m3u8
+#EXTINF:-1 tvg-id="5" tvg-name="Arirang" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Arirang.png" group-title="韩国频道",Arirang
+P2p://generationnexxxt.com:19806/5260ebd503c84b62bb0c9cd0d1e33223
+#EXTINF:-1 tvg-id="1" tvg-name="KBS1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS1.png" group-title="韩国频道",KBS1
+mitv://generationnexxxt.com:19806/28676e413f2a477ababeae97e87ef855
+#EXTINF:-1 tvg-id="2" tvg-name="KBS1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS1.png" group-title="韩国频道",KBS1
+P2p://generationnexxxt.com:19806/003ff31b09d841ad9775c0fd703d7ca4
+#EXTINF:-1 tvg-id="1" tvg-name="KBS2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS2.png" group-title="韩国频道",KBS2
+mitv://generationnexxxt.com:19806/fa378d3829f643d2a87c4c754bbae507
+#EXTINF:-1 tvg-id="2" tvg-name="KBS2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS2.png" group-title="韩国频道",KBS2
+P2p://generationnexxxt.com:19806/2738ccfca9bf478fabe58a315dcab4af
+#EXTINF:-1 tvg-id="1" tvg-name="KBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS.png" group-title="韩国频道",KBS
+mitv://generationnexxxt.com:19806/10263d570592484e864bf42334ba5a2f
+#EXTINF:-1 tvg-id="2" tvg-name="KBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS.png" group-title="韩国频道",KBS
+mitv://generationnexxxt.com:19806/0a9a842f13284e848e7aa72af382c176
+#EXTINF:-1 tvg-id="3" tvg-name="KBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS.png" group-title="韩国频道",KBS
+https://livecdn.fptplay.net:443/sdb/kbs_hls.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
+mitv://generationnexxxt.com:19806/c8f25b3b0185407792640de06e8781df
+#EXTINF:-1 tvg-id="2" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
+mitv://generationnexxxt.com:19806/a99ade867d304779a5ac84ab89228575
+#EXTINF:-1 tvg-id="3" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
+http://ye23.win/iptv/sbs5.1.php?id=S01
+#EXTINF:-1 tvg-id="4" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
+P2p://generationnexxxt.com:19806/52bdf003e484446f83ee00f00fd5b90f
+#EXTINF:-1 tvg-id="1" tvg-name="JTBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JTBC.png" group-title="韩国频道",JTBC
+mitv://generationnexxxt.com:19806/4e234cda667b42a8bc3081db3b08bfce
+#EXTINF:-1 tvg-id="2" tvg-name="JTBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JTBC.png" group-title="韩国频道",JTBC
+mitv://generationnexxxt.com:19806/7c397fb18c154c5f91e41a48fd3ab95c
+#EXTINF:-1 tvg-id="3" tvg-name="JTBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JTBC.png" group-title="韩国频道",JTBC
+P2p://generationnexxxt.com:19806/4ec82c36dd4043df9f31f0b2ee907277
+#EXTINF:-1 tvg-id="1" tvg-name="EBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/EBS.png" group-title="韩国频道",EBS
+mitv://generationnexxxt.com:19806/257252e5e0f749beb160af97e36d15d1
+#EXTINF:-1 tvg-id="2" tvg-name="EBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/EBS.png" group-title="韩国频道",EBS
+P2p://generationnexxxt.com:19806/4c8f9aabbe534d29890f7a2d75f8b3b0
+#EXTINF:-1 tvg-id="1" tvg-name="YTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/YTN.png" group-title="韩国频道",YTN
+mitv://generationnexxxt.com:19806/37e575278e574bc9a9fc598c733de125
+#EXTINF:-1 tvg-id="2" tvg-name="YTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/YTN.png" group-title="韩国频道",YTN
+http://ye23.win/iptv/korea2021.php?id=ytn
+#EXTINF:-1 tvg-id="3" tvg-name="YTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/YTN.png" group-title="韩国频道",YTN
+P2p://generationnexxxt.com:19806/0d09e3a2d01b42f7921db3ada4647b2b
+#EXTINF:-1 tvg-id="1" tvg-name="Mnet" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Mnet.png" group-title="韩国频道",Mnet
+mitv://generationnexxxt.com:19806/e4f2d41cce0c4f85a2019f13d1bb2aeb
+#EXTINF:-1 tvg-id="2" tvg-name="Mnet" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Mnet.png" group-title="韩国频道",Mnet
+P2p://generationnexxxt.com:19806/7cf860c0828a4e4181e5801a11306088
+#EXTINF:-1 tvg-id="1" tvg-name="OCN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/OCN.png" group-title="韩国频道",OCN
+mitv://generationnexxxt.com:19806/0fae247ef984444d9149e2c20be2c8b3
+#EXTINF:-1 tvg-id="2" tvg-name="OCN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/OCN.png" group-title="韩国频道",OCN
+mitv://generationnexxxt.com:19806/328994e1d61946198d921e2fe2bbc1a0
+#EXTINF:-1 tvg-id="3" tvg-name="OCN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/OCN.png" group-title="韩国频道",OCN
+P2p://generationnexxxt.com:19806/4475e43ba7684b34acb1711ddd2cf347
+#EXTINF:-1 tvg-id="1" tvg-name="TV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/TV.png" group-title="韩国频道",TV
+mitv://generationnexxxt.com:19806/f2bbdada428d45c298a039f3bdf0f12e
+#EXTINF:-1 tvg-id="2" tvg-name="TV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/TV.png" group-title="韩国频道",TV
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=595
+#EXTINF:-1 tvg-id="1" tvg-name="MBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBC.png" group-title="韩国频道",MBC
+mitv://generationnexxxt.com:19806/36faab63fc2e4983b559a7e8f2002e30
+#EXTINF:-1 tvg-id="2" tvg-name="MBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBC.png" group-title="韩国频道",MBC
+http://vod.mpmbc.co.kr:1935/live/encoder-tv/playlist.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="MBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBC.png" group-title="韩国频道",MBC
+http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="MBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBC.png" group-title="韩国频道",MBC
+http://123.254.72.24:1935/tvlive/livestream2/chunklist_w265464937.m3u8
+#EXTINF:-1 tvg-id="5" tvg-name="MBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBC.png" group-title="韩国频道",MBC
+P2p://generationnexxxt.com:19806/eeec1b536c6e4401866b819b9f9331d9
+#EXTINF:-1 tvg-id="1" tvg-name="MBN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBN.png" group-title="韩国频道",MBN
+mitv://generationnexxxt.com:19806/09dbf5da37f9450c9bca9c7dabadf2bd
+#EXTINF:-1 tvg-id="2" tvg-name="MBN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBN.png" group-title="韩国频道",MBN
+https://wms2-kortv.akamaized.net/a_live/81992167/smil:20tv121.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="MBN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/MBN.png" group-title="韩国频道",MBN
+P2p://generationnexxxt.com:19806/231a17a181914f82a83bfa41c16fd683
+#EXTINF:-1 tvg-id="1" tvg-name="SPOTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SPOTV.png" group-title="韩国频道",SPOTV
+mitv://generationnexxxt.com:19806/d270398d5c9d4358a1fab94773d6b8d1
+#EXTINF:-1 tvg-id="2" tvg-name="SPOTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SPOTV.png" group-title="韩国频道",SPOTV
+P2p://generationnexxxt.com:19806/4644a6bafc344250b5feee6805553d42
+#EXTINF:-1 tvg-id="3" tvg-name="SPOTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SPOTV.png" group-title="韩国频道",SPOTV
+P2p://generationnexxxt.com:19806/db790c95c4d34c02b9a280e4b4889af3
+#EXTINF:-1 tvg-id="1" tvg-name="ArirangTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/ArirangTV.png" group-title="韩国频道",ArirangTV
+http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="ArirangTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/ArirangTV.png" group-title="韩国频道",ArirangTV
+http://amdlive-ch02.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="ArirangTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/ArirangTV.png" group-title="韩国频道",ArirangTV
+http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="ArirangTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/ArirangTV.png" group-title="韩国频道",ArirangTV
+http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="KBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBC.png" group-title="韩国频道",KBC
+http://119.200.131.11:1935/KBCTV/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="NBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/NBS.png" group-title="韩国频道",NBS
+https://media.joycorp.co.kr:4443/live/live_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="NBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/NBS.png" group-title="韩国频道",NBS
+https://media.joycorp.co.kr:4443/live/ngrp:live_all/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="KCTV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KCTV.png" group-title="韩国频道",KCTV
+http://119.77.96.184:1935/chn05/chn05/chunklist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="CTS기독교TV" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CTS기독교TV.png" group-title="韩国频道",CTS기독교TV
+https://d34t5yjz1ooymj.cloudfront.net/out/v1/875039d5eba0478fa8375a06b3aa5a37/index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="TBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/TBS.png" group-title="韩国频道",TBS
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd04&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-id="2" tvg-name="TBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/TBS.png" group-title="韩国频道",TBS
+https://tbs4.mov3.co/hls/tbs.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="TBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/TBS.png" group-title="韩国频道",TBS
+https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="娱乐频道",JJ斗地主
 http://159.75.85.63:35455/douyu/488743
-#EXTINF:-1 tvg-id="2" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="影视频道",JJ斗地主
+#EXTINF:-1 tvg-id="2" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="娱乐频道",JJ斗地主
 http://openhls-tct.douyucdn2.cn:80/dyliveflv1a/488743rAHScWyyII_2000.m3u8
-#EXTINF:-1 tvg-id="3" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="影视频道",JJ斗地主
+#EXTINF:-1 tvg-id="3" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="娱乐频道",JJ斗地主
 http://tc-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII_2000.flv?wsAuth=fd695c444eeee99cc6122ed396c805ba&token=cpn-androidmpro-0-488743-
-#EXTINF:-1 tvg-id="4" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="影视频道",JJ斗地主
+#EXTINF:-1 tvg-id="4" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="娱乐频道",JJ斗地主
 http://tc-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII_2000.flv?wsAuth=fd695c444eeee99cc6122ed396c805ba&token=cpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901&logo=0&expire=0&did=d010b07dcb997ada9934081c873542f0&origin=tct&vhost=play2
-#EXTINF:-1 tvg-id="5" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="影视频道",JJ斗地主
+#EXTINF:-1 tvg-id="5" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="娱乐频道",JJ斗地主
 http://tc-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII_2000.flv?wsAuth=fd545c444eeee99cc6122ed396c805ba&token=cpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901&logo=0&expire=0&did=d010b07dcb997ada9934081c873542f0&origin=tct&vhost=play2
-#EXTINF:-1 tvg-id="6" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="影视频道",JJ斗地主
+#EXTINF:-1 tvg-id="6" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="娱乐频道",JJ斗地主
 http://111.20.21.163/live/488743rAHScWyyII_2000.flv?302_type=cold_aggr&_session_id=1343553445.n.cn-z9w724.mt5f_1421068&cac=1&cb_retry=0&did=d010b07dcb997ada9934081c873542f0&domain=tc-tct.douyucdn2.cn&expire=0&fp_user_url=http%3A%2F%2Ftc-tct.douyucdn2.cn%2Fdyliveflv1a%2F488743rAHScWyyII_2000.flv%3FwsAuth%3Dfd695c444eeee99cc6122ed396c805ba%26token%3Dcpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901%26logo%3D0%26expire%3D0%26did%3Dd010b07dcb997ada9934081c873542f0%26origin%3Dtct%26vhost%3Dplay2&logo=0&manage_ip=&node_id=&origin=tct&pro_type=http&redirect_from=pod.cn-z9w724.mt5f.nss&redirect_from_ip=183.201.192.138&redirect_to=fc.cn-h58z42&redirect_to_ip=111.20.21.163&token=cpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901&vhost=tc-tct.douyucdn2.cn&wsAuth=fd695c444eeee99cc6122ed396c805ba
-#EXTINF:-1 tvg-id="7" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="影视频道",JJ斗地主
+#EXTINF:-1 tvg-id="7" tvg-name="JJ斗地主" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JJ斗地主.png" group-title="娱乐频道",JJ斗地主
 http://openhls-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII.m3u8?txSecret=e0a0c43bb68f52c71715cfaf0d54dee7&txTime=677ff1a0&token=cph-androidmpro-0-488743-8f824fc718143899a47519beaf09cd4d&did=10000000000000000000000000001501&origin=tct&vhost=play2&sid=407024163
 #EXTINF:-1 tvg-id="1" tvg-name="Teen Girls" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Teen Girls.png" group-title="成人直播_9",Teen Girls
 http://live.mycamtv.com/teen.m3u8
