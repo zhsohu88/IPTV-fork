@@ -1,117 +1,124 @@
-import re
-import requests
-import logging
-from collections import OrderedDict
-from datetime import datetime
-import config
+import re  # 导入正则表达式模块，用于字符串匹配和处理
+import requests  # 导入requests模块，用于HTTP请求
+import logging  # 导入日志记录模块，用于记录调试和运行信息
+from collections import OrderedDict  # 从collections模块导入OrderedDict，用于有序字典
+from datetime import datetime  # 导入datetime模块，用于处理日期和时间
+import config  # 导入config模块，用于配置文件
 
 # 配置日志记录
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), logging.StreamHandler()])
+logging.basicConfig(
+    level=logging.INFO, 
+    format='%(asctime)s - %(levelname)s - %(message)s', 
+    handlers=[
+        logging.FileHandler("function.log", "w", encoding="utf-8"),  # 将日志记录到文件
+        logging.StreamHandler()  # 将日志输出到控制台
+    ]
+)
 
 # 解析模板文件
 def parse_template(template_file):
-    template_channels = OrderedDict()
-    current_category = None
+    template_channels = OrderedDict()  # 创建一个有序字典，用于存储模板中的频道信息
+    current_category = None  # 初始化当前分类
 
     # 读取模板文件
     with open(template_file, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith("#"):
-                if "#genre#" in line:
-                    current_category = line.split(",")[0].strip()
-                    template_channels[current_category] = []
+        for line in f:  # 遍历文件中的每一行
+            line = line.strip()  # 去除行首和行尾的空白字符
+            if line and not line.startswith("#"):  # 如果行不为空且不以#开头
+                if "#genre#" in line:  # 如果行中包含#genre#
+                    current_category = line.split(",")[0].strip()  # 获取当前分类
+                    template_channels[current_category] = []  # 初始化当前分类的频道列表
                 elif current_category:
-                    channel_name = line.split(",")[0].strip()
-                    template_channels[current_category].append(channel_name)
+                    channel_name = line.split(",")[0].strip()  # 获取频道名称
+                    template_channels[current_category].append(channel_name)  # 将频道名称添加到当前分类的频道列表中
 
-    return template_channels
+    return template_channels  # 返回解析后的模板频道信息
 
 # 获取频道信息
 def fetch_channels(url):
-    channels = OrderedDict()
+    channels = OrderedDict()  # 创建一个有序字典，用于存储获取的频道信息
 
     try:
-        response = requests.get(url)
-        response.raise_for_status()
-        response.encoding = 'utf-8'
-        lines = response.text.split("\n")
-        current_category = None
-        is_m3u = any("#EXTINF" in line for line in lines[:15])
-        source_type = "m3u" if is_m3u else "txt"
-        logging.info(f"url: {url} 获取成功，判断为{source_type}格式")
+        response = requests.get(url)  # 发送HTTP GET请求
+        response.raise_for_status()  # 如果响应状态码不是200，抛出异常
+        response.encoding = 'utf-8'  # 设置响应编码为utf-8
+        lines = response.text.split("\n")  # 将响应内容按行分割
+        current_category = None  # 初始化当前分类
+        is_m3u = any("#EXTINF" in line for line in lines[:15])  # 判断是否为m3u格式
+        source_type = "m3u" if is_m3u else "txt"  # 根据格式类型设置source_type
+        logging.info(f"url: {url} 获取成功，判断为{source_type}格式")  # 记录日志
 
         if is_m3u:
-            for line in lines:
-                line = line.strip()
-                if line.startswith("#EXTINF"):
-                    match = re.search(r'group-title="(.*?)",(.*)', line)
+            for line in lines:  # 遍历每一行
+                line = line.strip()  # 去除行首和行尾的空白字符
+                if line.startswith("#EXTINF"):  # 如果行以#EXTINF开头
+                    match = re.search(r'group-title="(.*?)",(.*)', line)  # 使用正则表达式匹配group-title和频道名称
                     if match:
-                        current_category = match.group(1).strip()
-                        channel_name = match.group(2).strip()
+                        current_category = match.group(1).strip()  # 获取当前分类
+                        channel_name = match.group(2).strip()  # 获取频道名称
                         if current_category not in channels:
-                            channels[current_category] = []
-                elif line and not line.startswith("#"):
-                    channel_url = line.strip()
+                            channels[current_category] = []  # 初始化当前分类的频道列表
+                elif line and not line.startswith("#"):  # 如果行不为空且不以#开头
+                    channel_url = line.strip()  # 获取频道URL
                     if current_category and channel_name:
-                        channels[current_category].append((channel_name, channel_url))
+                        channels[current_category].append((channel_name, channel_url))  # 将频道名称和URL添加到当前分类的频道列表中
         else:
-            for line in lines:
-                line = line.strip()
-                if "#genre#" in line:
-                    current_category = line.split(",")[0].strip()
-                    channels[current_category] = []
+            for line in lines:  # 遍历每一行
+                line = line.strip()  # 去除行首和行尾的空白字符
+                if "#genre#" in line:  # 如果行中包含#genre#
+                    current_category = line.split(",")[0].strip()  # 获取当前分类
+                    channels[current_category] = []  # 初始化当前分类的频道列表
                 elif current_category:
-                    match = re.match(r"^(.*?),(.*?)$", line)
+                    match = re.match(r"^(.*?),(.*?)$", line)  # 使用正则表达式匹配频道名称和URL
                     if match:
-                        channel_name = match.group(1).strip()
-                        channel_url = match.group(2).strip()
-                        channels[current_category].append((channel_name, channel_url))
+                        channel_name = match.group(1).strip()  # 获取频道名称
+                        channel_url = match.group(2).strip()  # 获取频道URL
+                        channels[current_category].append((channel_name, channel_url))  # 将频道名称和URL添加到当前分类的频道列表中
                     elif line:
-                        channels[current_category].append((line, ''))
+                        channels[current_category].append((line, ''))  # 如果只有频道名称没有URL
         if channels:
-            categories = ", ".join(channels.keys())
-            logging.info(f"url: {url} 爬取成功✅，包含频道分类: {categories}")
+            categories = ", ".join(channels.keys())  # 获取所有分类名称
+            logging.info(f"url: {url} 爬取成功✅，包含频道分类: {categories}")  # 记录日志
     except requests.RequestException as e:
-        logging.error(f"url: {url} 爬取失败❌, Error: {e}")
+        logging.error(f"url: {url} 爬取失败❌, Error: {e}")  # 记录错误日志
 
-    return channels
+    return channels  # 返回获取的频道信息
 
 # 匹配频道信息
 def match_channels(template_channels, all_channels):
-    matched_channels = OrderedDict()
+    matched_channels = OrderedDict()  # 创建一个有序字典，用于存储匹配的频道信息
 
-    for category, channel_list in template_channels.items():
-        matched_channels[category] = OrderedDict()
-        for channel_name in channel_list:
-            for online_category, online_channel_list in all_channels.items():
-                for online_channel_name, online_channel_url in online_channel_list:
-                    if channel_name == online_channel_name:
-                        matched_channels[category].setdefault(channel_name, []).append(online_channel_url)
+    for category, channel_list in template_channels.items():  # 遍历模板中的每个分类和频道列表
+        matched_channels[category] = OrderedDict()  # 初始化当前分类的匹配频道列表
+        for channel_name in channel_list:  # 遍历模板中的每个频道名称
+            for online_category, online_channel_list in all_channels.items():  # 遍历所有获取的分类和频道列表
+                for online_channel_name, online_channel_url in online_channel_list:  # 遍历获取的每个频道名称和URL
+                    if channel_name == online_channel_name:  # 如果频道名称匹配
+                        matched_channels[category].setdefault(channel_name, []).append(online_channel_url)  # 将匹配的频道URL添加到匹配频道列表中
 
-    return matched_channels
+    return matched_channels  # 返回匹配的频道信息
 
 # 过滤来源URL
 def filter_source_urls(template_file):
-    template_channels = parse_template(template_file)
-    source_urls = config.source_urls
+    template_channels = parse_template(template_file)  # 解析模板文件获取模板频道信息
+    source_urls = config.source_urls  # 从配置文件中获取来源URL列表
 
-    all_channels = OrderedDict()
-    for url in source_urls:
-        fetched_channels = fetch_channels(url)
-        for category, channel_list in fetched_channels.items():
+    all_channels = OrderedDict()  # 创建一个有序字典，用于存储所有获取的频道信息
+    for url in source_urls:  # 遍历每个来源URL
+        fetched_channels = fetch_channels(url)  # 获取频道信息
+        for category, channel_list in fetched_channels.items():  # 遍历获取的每个分类和频道列表
             if category in all_channels:
-                all_channels[category].extend(channel_list)
+                all_channels[category].extend(channel_list)  # 如果分类已存在，扩展频道列表
             else:
-                all_channels[category] = channel_list
+                all_channels[category] = channel_list  # 否则，初始化分类的频道列表
 
-    matched_channels = match_channels(template_channels, all_channels)
+    matched_channels = match_channels(template_channels, all_channels)  # 匹配频道信息
 
-    return matched_channels, template_channels
+    return matched_channels, template_channels  # 返回匹配的频道信息和模板频道信息
 
 # 判断是否为IPv6
 def is_ipv6(url):
-    return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
+    return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None  # 使用正则表达式判断URL是否为IPv6格式
 
 # 更新频道URL到M3U文件
 def updateChannelUrlsM3U(channels, template_channels):
@@ -136,22 +143,11 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     filtered_urls.append(url)  # 添加到过滤后的URL列表中
                                     written_urls.add(url)  # 将URL添加到已写入的URL集合中
 
-                            total_urls = len(filtered_urls)  # 获取过滤后的URL总数
                             for index, url in enumerate(filtered_urls, start=1):  # 遍历过滤后的URL，并从1开始计数
-                                # 根据IP版本生成URL后缀
-                                if is_ipv6(url):
-                                    url_suffix = f"$LR•IPV6" if total_urls == 1 else f"$LR•IPV6『线路{index}』"
-                                else:
-                                    url_suffix = f"$LR•IPV4" if total_urls == 1 else f"$LR•IPV4『线路{index}』"
-                                if '$' in url:
-                                    base_url = url.split('$', 1)[0]  # 分割URL，获取基础URL
-                                else:
-                                    base_url = url
-
-                                new_url = f"{base_url}{url_suffix}"  # 生成新的URL
+                                new_url = url  # 生成新的URL
 
                                 # 写入M3U文件中的频道信息
-                                f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n""")
+                                f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
                                 f_m3u.write(new_url + "\n")
                                 # 写入TXT文件中的频道信息
                                 f_txt.write(f"{channel_name},{new_url}\n")
