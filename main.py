@@ -2,7 +2,6 @@ import re  # 导入正则表达式模块，用于字符串匹配和处理
 import requests  # 导入requests模块，用于进行HTTP请求
 import logging  # 导入日志记录模块，用于记录调试和运行信息
 from collections import OrderedDict  # 从collections模块导入OrderedDict类，用于创建有序字典
-from datetime import datetime  # 导入datetime模块，用于处理日期和时间
 import config  # 导入config模块，用于加载配置文件
 
 # 配置日志记录
@@ -147,29 +146,16 @@ def updateChannelUrlsM3U(channels, template_channels):
                 if category in channels:  # 如果频道分类存在于获取的频道列表中
                     for channel_name in channel_list:  # 遍历每个频道名称
                         if channel_name in channels[category]:  # 如果频道名称存在于获取的频道分类中
-                            # 按照IP版本优先级对URL进行排序
+                            # 按照IP版本优先级对URL进行排序，并过滤掉IPv6项
                             sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
                             filtered_urls = []  # 创建一个列表来存储过滤后的URL
                             for url in sorted_urls:  # 遍历排序后的URL
-                                # 如果URL有效且不在已写入的URL集合中，并且不包含于黑名单中
-                                if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
+                                # 如果URL有效且不在已写入的URL集合中，并且不包含于黑名单中，且不是IPv6地址
+                                if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist) and not is_ipv6(url):
                                     filtered_urls.append(url)
                                     written_urls.add(url)  # 将URL添加到已写入的URL集合中
 
-                            total_urls = len(filtered_urls)  # 获取过滤后的URL总数
                             for index, url in enumerate(filtered_urls, start=1):  # 遍历过滤后的URL，并从1开始计数
-                                # 注释掉在链接后面加东西的代码
-                                # if is_ipv6(url):
-                                #     url_suffix = f"$LR•IPV6" if total_urls == 1 else f"$LR•IPV6『线路{index}』"
-                                # else:
-                                #     url_suffix = f"$LR•IPV4" if total_urls == 1 else f"$LR•IPV4『线路{index}』"
-                                # if '$' in url:
-                                #     base_url = url.split('$', 1)[0]  # 分割URL，获取基础URL
-                                # else:
-                                #     base_url = url
-
-                                # new_url = f"{base_url}{url_suffix}"  # 生成新的URL
-                                
                                 new_url = url  # 不对URL进行任何修改
 
                                 f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
