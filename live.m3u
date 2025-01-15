@@ -2011,6 +2011,160 @@ http://123.184.28.3/hlslive-tx-cdn.ysp.cctv.cn/549/2024079503.m3u8
 http://116.148.164.119/bktlivecloud-cdn.ysp.cctv.cn/ysp/2024079503.m3u8
 #EXTINF:-1 tvg-id="41" tvg-name="CCTV17" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV17.png" group-title="央视频道",CCTV17
 P2p://generationnexxxt.com:19806/d155cd0903944373a0c13e8164532313
+#EXTINF:-1 tvg-id="1" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://[2409:8087:2801:22:100::3f]/wh7f454c46tw1296912505_1503762332/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236243/index.m3u8?icpid=88888888&RTS=1717812121&from=5&hms_devid=1646&online=1717812121&vqe=3
+#EXTINF:-1 tvg-id="2" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://[2409:8087:5e01:34::22]:6610/ZTE_CMS/00000001000000060000000000000481/index.m3u8?IAS
+#EXTINF:-1 tvg-id="3" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://39.134.136.161:6610/000000001000/1000000002000027253/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000002000027253
+#EXTINF:-1 tvg-id="4" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://39.134.136.161:6610/000000001000/5000000002000002652/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000002000002652
+#EXTINF:-1 tvg-id="5" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://39.134.136.161:6610/000000001000/6000000003000018981/index.m3u8?livemode=1&stbId=10&channel-id=wasusyt&Contentid=6000000003000018981
+#EXTINF:-1 tvg-id="6" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://39.134.136.161:6610/000000001000/7106250793420582078/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=7106250793420582078
+#EXTINF:-1 tvg-id="7" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://218.71.45.167:9999/udp/233.50.201.75:5140
+#EXTINF:-1 tvg-id="8" tvg-name="CETV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV1.png" group-title="央视频道",CETV1
+http://dassby.qqff.top:99/live/中央教育高清/index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="CETV2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV2.png" group-title="央视频道",CETV2
+http://39.134.136.161:6610/000000001000/1000000005000266004/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000005000266004
+#EXTINF:-1 tvg-id="2" tvg-name="CETV2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV2.png" group-title="央视频道",CETV2
+http://39.134.136.161:6610/000000001000/2000000003000000047/index.m3u8?livemode=1&stbId=10&channel-id=hnbblive&Contentid=2000000003000000047
+#EXTINF:-1 tvg-id="3" tvg-name="CETV2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV2.png" group-title="央视频道",CETV2
+http://39.134.136.161:6610/000000001000/5000000011000031201/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000011000031201
+#EXTINF:-1 tvg-id="4" tvg-name="CETV2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV2.png" group-title="央视频道",CETV2
+http://211.162.39.193:81/live/CETV2-1500k/live.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="CETV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV4.png" group-title="央视频道",CETV4
+http://[2409:8087:2801:20:100::4b]/wh7f454c46tw1340921187_509424522/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221235543/1/index.m3u8?fmt=ts2hls&icpid=88888888&RTS=1717812165&from=5&ocs=2_2409:8087:2801:22:100::43_80&hms_devid=371&online=1717812165&vqe=3
+#EXTINF:-1 tvg-id="2" tvg-name="CETV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV4.png" group-title="央视频道",CETV4
+http://39.134.136.161:6610/000000001000/1000000005000025333/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000005000025333
+#EXTINF:-1 tvg-id="3" tvg-name="CETV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV4.png" group-title="央视频道",CETV4
+http://39.134.136.161:6610/000000001000/5000000006000012123/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000006000012123
+#EXTINF:-1 tvg-id="4" tvg-name="CETV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV4.png" group-title="央视频道",CETV4
+http://39.134.136.161:6610/000000001000/5000000011000031126/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000011000031126
+#EXTINF:-1 tvg-id="5" tvg-name="CETV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV4.png" group-title="央视频道",CETV4
+http://39.134.136.161:6610/000000001000/6000000005000042312/index.m3u8?livemode=1&stbId=10&channel-id=wasusyt&Contentid=6000000005000042312
+#EXTINF:-1 tvg-id="6" tvg-name="CETV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV4.png" group-title="央视频道",CETV4
+http://211.162.39.193:81/live/CETV4-1500k/live.m3u8
+#EXTINF:-1 tvg-id="7" tvg-name="CETV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CETV4.png" group-title="央视频道",CETV4
+http://218.71.45.167:9999/udp/233.50.201.172:5140
+#EXTINF:-1 tvg-id="1" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://39.134.136.161:6610/000000001000/1000000002000009569/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000002000009569
+#EXTINF:-1 tvg-id="2" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://39.134.136.161:6610/000000001000/4864750119738201239/index.m3u8?livemode=1&stbId=10&channel-id=wasusyt&Contentid=4864750119738201239
+#EXTINF:-1 tvg-id="3" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://39.134.136.161:6610/000000001000/7745129417417101820/index.m3u8?livemode=1&stbId=test&channel-id=hnbblive&Contentid=7745129417417101820
+#EXTINF:-1 tvg-id="4" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://39.134.136.161:6610/000000001000/8428799834696888424/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=8428799834696888424
+#EXTINF:-1 tvg-id="5" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.233.199.46:8888/rtp/233.50.200.84:5140
+#EXTINF:-1 tvg-id="6" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.233.199.46:8888/rtp/233.50.201.126:5140
+#EXTINF:-1 tvg-id="7" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.233.199.46:8888/rtp/233.50.201.36:5140
+#EXTINF:-1 tvg-id="8" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.233.199.46:8888/rtp/233.50.201.37:5140
+#EXTINF:-1 tvg-id="9" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.233.199.46:8888/rtp/233.50.201.38:5140
+#EXTINF:-1 tvg-id="10" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.233.199.46:8888/rtp/233.50.201.39:5140
+#EXTINF:-1 tvg-id="11" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.234.14.200:8888/rtp/233.50.200.84:5140
+#EXTINF:-1 tvg-id="12" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.234.14.200:8888/rtp/233.50.201.126:5140
+#EXTINF:-1 tvg-id="13" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.234.14.200:8888/rtp/233.50.201.36:5140
+#EXTINF:-1 tvg-id="14" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.234.14.200:8888/rtp/233.50.201.37:5140
+#EXTINF:-1 tvg-id="15" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.234.14.200:8888/rtp/233.50.201.38:5140
+#EXTINF:-1 tvg-id="16" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://122.234.14.200:8888/rtp/233.50.201.39:5140
+#EXTINF:-1 tvg-id="17" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://183.133.104.144:8899/rtp/233.50.200.84:5140
+#EXTINF:-1 tvg-id="18" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://183.133.104.144:8899/rtp/233.50.201.126:5140
+#EXTINF:-1 tvg-id="19" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://183.133.104.144:8899/rtp/233.50.201.37:5140
+#EXTINF:-1 tvg-id="20" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://183.133.104.144:8899/rtp/233.50.201.38:5140
+#EXTINF:-1 tvg-id="21" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://183.133.104.144:8899/rtp/233.50.201.39:5140
+#EXTINF:-1 tvg-id="22" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://61.190.129.195:8688/rtp/238.1.78.50:6272
+#EXTINF:-1 tvg-id="23" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://nb.thkss.com:9981/stream/channelid/1243935637?profile=pass
+#EXTINF:-1 tvg-id="24" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225604/index.m3u8
+#EXTINF:-1 tvg-id="25" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://218.71.45.167:9999/udp/233.50.201.126:5140
+#EXTINF:-1 tvg-id="26" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://36.32.174.67:60080/newlive/live/hls/5/live.m3u8
+#EXTINF:-1 tvg-id="27" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://nas.hssvm.com:8888/udp/225.1.1.27:5002
+#EXTINF:-1 tvg-id="28" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://123.184.28.50/hlslive-tx-cdn.ysp.cctv.cn/512/2024181703.m3u8
+#EXTINF:-1 tvg-id="29" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://123.184.28.3/hlslive-tx-cdn.ysp.cctv.cn/549/2024181703.m3u8
+#EXTINF:-1 tvg-id="30" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+http://116.148.164.119/bktlivecloud-cdn.ysp.cctv.cn/ysp/2022575003.m3u8
+#EXTINF:-1 tvg-id="31" tvg-name="CGTN" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png" group-title="央视频道",CGTN
+P2p://generationnexxxt.com:19806/1b5e656dd2604b7e9af1133db1f40955
+#EXTINF:-1 tvg-id="1" tvg-name="CGTN阿拉伯语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN阿拉伯语.png" group-title="央视频道",CGTN阿拉伯语
+http://39.134.136.161:6610/000000001000/1000000006000280001/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000006000280001
+#EXTINF:-1 tvg-id="2" tvg-name="CGTN阿拉伯语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN阿拉伯语.png" group-title="央视频道",CGTN阿拉伯语
+http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226517/index.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="CGTN阿拉伯语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN阿拉伯语.png" group-title="央视频道",CGTN阿拉伯语
+https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://[2409:8087:2801:22:100::48]/wh7f454c46tw4168685594_1573579981/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236228/index.m3u8?icpid=88888888&RTS=1717810698&from=5&hms_devid=1641&online=1717810698&vqe=3
+#EXTINF:-1 tvg-id="2" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://39.134.136.161:6610/000000001000/1000000006000280004/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000006000280004
+#EXTINF:-1 tvg-id="3" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226543/index.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://liveru.cgtn.com/1000r/prog_index.m3u8
+#EXTINF:-1 tvg-id="5" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://218.71.45.167:9999/udp/233.50.201.39:5140
+#EXTINF:-1 tvg-id="6" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+https://liveru.cgtn.com/1000r/prog_index.m3u8
+#EXTINF:-1 tvg-id="7" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://123.184.28.50/hlslive-tx-cdn.ysp.cctv.cn/512/2024181903.m3u8
+#EXTINF:-1 tvg-id="8" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://123.184.28.3/hlslive-tx-cdn.ysp.cctv.cn/549/2024181903.m3u8
+#EXTINF:-1 tvg-id="9" tvg-name="CGTN俄语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN俄语.png" group-title="央视频道",CGTN俄语
+http://116.148.164.119/bktlivecloud-cdn.ysp.cctv.cn/ysp/2022574803.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+http://[2409:8087:2801:20:100::43]/wh7f454c46tw4097063353_-1012063280/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236288/index.m3u8?icpid=88888888&RTS=1717810626&from=5&hms_devid=375&online=1717810626&vqe=3
+#EXTINF:-1 tvg-id="2" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+http://39.134.136.161:6610/000000001000/1000000006000280003/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000006000280003
+#EXTINF:-1 tvg-id="3" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226520/index.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+https://livefr.cgtn.com/1000f/prog_index.m3u8
+#EXTINF:-1 tvg-id="5" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+http://218.71.45.167:9999/udp/233.50.201.37:5140
+#EXTINF:-1 tvg-id="6" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+https://francais-livews.cgtn.com/hls/LSvev95OuFZtKLc6CeKEFYXj220802LSTeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="7" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+http://123.184.28.50/hlslive-tx-cdn.ysp.cctv.cn/512/2024181803.m3u8
+#EXTINF:-1 tvg-id="8" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+http://123.184.28.3/hlslive-tx-cdn.ysp.cctv.cn/549/2024181803.m3u8
+#EXTINF:-1 tvg-id="9" tvg-name="CGTN法语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN法语.png" group-title="央视频道",CGTN法语
+http://116.148.164.119/bktlivecloud-cdn.ysp.cctv.cn/ysp/2022574903.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="CGTN记录" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN记录.png" group-title="央视频道",CGTN记录
+http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/00000001000000060000000000000528/index.m3u8?IAS
+#EXTINF:-1 tvg-id="2" tvg-name="CGTN记录" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN记录.png" group-title="央视频道",CGTN记录
+http://[2409:8087:2801:22:100::72]/wh7f454c46tw4048440674_827601534/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236205/index.m3u8?icpid=88888888&RTS=1717810578&from=5&hms_devid=316&online=1717810578&vqe=3
+#EXTINF:-1 tvg-id="3" tvg-name="CGTN记录" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN记录.png" group-title="央视频道",CGTN记录
+http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u8?livemode=1&stbId=test&channel-id=hnbblive&Contentid=7114647837765104058
+#EXTINF:-1 tvg-id="4" tvg-name="CGTN记录" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN记录.png" group-title="央视频道",CGTN记录
+https://livedoc.cgtn.com/500d/prog_index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="CGTN西班牙语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN西班牙语.png" group-title="央视频道",CGTN西班牙语
+http://39.134.136.161:6610/000000001000/1000000006000280002/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000006000280002
+#EXTINF:-1 tvg-id="2" tvg-name="CGTN西班牙语" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN西班牙语.png" group-title="央视频道",CGTN西班牙语
+http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226431/index.m3u8
 #EXTINF:-1 tvg-id="1" tvg-name="广东珠江" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/广东珠江.png" group-title="广东频道",广东珠江
 http://39.134.136.161:6610/000000001000/1000000004000011655/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000004000011655
 #EXTINF:-1 tvg-id="2" tvg-name="广东珠江" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/广东珠江.png" group-title="广东频道",广东珠江
