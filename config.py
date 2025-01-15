@@ -52,7 +52,7 @@ url_blacklist = [
     "[2409:8087:2001:20:2800:0:df6e:eb1d]/ott.mobaibox.com/",
     "[2409:8087:2001:20:2800:0:df6e:eb1d]:80",
     "[2409:8087:2001:20:2800:0:df6e:eb24]",
-    "2409:8087:2001:20:2800:0:df6e:eb25]:80",
+    "[2409:8087:2001:20:2800:0:df6e:eb25]:80",
     "[2409:8087:2001:20:2800:0:df6e:eb27]",
     
     "generationnexxxt.com:19806",
@@ -82,7 +82,6 @@ url_blacklist = [
     "mail.petzhu.top:7000",
     "alvin.ergotron.net:8000",
     "home.huaz.site:4000",
-    "dms.yryyj.site:8188",
     "dms.yryyj.site:8188",
     "218.241.192.50:8808",
     "39.77.3.5:8989",
