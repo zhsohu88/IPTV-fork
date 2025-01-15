@@ -48,7 +48,7 @@ def fetch_channels(url):
         source_type = "m3u" if is_m3u else "txt"  # 根据格式类型设置 source_type
         logging.info(f"url: {url} 获取成功，判断为 {source_type} 格式")  # 记录获取成功日志
 
-        if is_m3u:   # 处理m3u格式
+        if is_m3u:
             for line in lines:  # 遍历每一行
                 line = line.strip()  # 去除行首和行尾的空白字符
                 if line.startswith("#EXTINF"):  # 如果行以 #EXTINF 开头
@@ -62,7 +62,7 @@ def fetch_channels(url):
                     channel_url = line.strip()  # 获取频道 URL
                     if current_category and channel_name:
                         channels[current_category].append((channel_name, channel_url))  # 将频道名称和 URL 添加到当前分类的频道列表中
-        else:     # 处理txt格式
+        else:
             for line in lines:  # 遍历每一行
                 line = line.strip()  # 去除行首和行尾的空白字符
                 if "#genre#" in line:  # 如果行中包含 #genre#
@@ -136,12 +136,13 @@ def updateChannelUrlsM3U(channels, template_channels):
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
         with open("live.txt", "w", encoding="utf-8") as f_txt:
-            for group in config.announcements:
-                f_txt.write(f"{group['channel']},#genre#\n")
-                for announcement in group['entries']:
-                    f_m3u.write(f"""#EXTINF:-1 tvg-id="1" tvg-name="{announcement['name']}" tvg-logo="{announcement['logo']}" group-title="{group['channel']}",{announcement['name']}\n""")
-                    f_m3u.write(f"{announcement['url']}\n")
-                    f_txt.write(f"{announcement['name']},{announcement['url']}\n")
+            # 注释掉这一段代码
+            # for group in config.announcements:
+            #     f_txt.write(f"{group['channel']},#genre#\n")
+            #     for announcement in group['entries']:
+            #         f_m3u.write(f"""#EXTINF:-1 tvg-id="1" tvg-name="{announcement['name']}" tvg-logo="{announcement['logo']}" group-title="{group['channel']}",{announcement['name']}\n""")
+            #         f_m3u.write(f"{announcement['url']}\n")
+            #         f_txt.write(f"{announcement['name']},{announcement['url']}\n")
 
             for category, channel_list in template_channels.items():  # 遍历模板中的频道分类
                 f_txt.write(f"{category},#genre#\n")  # 写入每个频道分类
