@@ -1,8 +1,8 @@
-import re  # 导入正则表达式模块，用于字符串匹配和处理
-import requests  # 导入requests模块，用于进行HTTP请求
-import logging  # 导入日志记录模块，用于记录调试和运行信息
-from collections import OrderedDict  # 从collections模块导入OrderedDict类，用于创建有序字典
-import config  # 导入config模块，用于加载配置文件
+import re
+import requests
+import logging
+from collections import OrderedDict
+import config
 
 # 配置日志记录
 logging.basicConfig(
@@ -115,43 +115,30 @@ def filter_source_urls(template_file):
 
     return matched_channels, template_channels  # 返回匹配的频道信息和模板频道信息
 
-# 判断是否为IPv6
-def is_ipv6(url):
-    return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None  # 使用正则表达式判断URL是否为IPv6格式
+# # 判断是否为IPv6
+# def is_ipv6(url):
+#     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None  # 使用正则表达式判断URL是否为IPv6格式
 
 # 更新频道URL到M3U文件
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()  # 创建一个集合来存储已写入的URL，以避免重复
-
-    # current_date = datetime.now().strftime("%Y-%m-%d")  # 获取当前日期
-    # for group in config.announcements:  # 遍历配置中的公告组
-    #     for announcement in group['entries']:  # 遍历每个公告
-    #         if announcement['name'] is None:
-    #             announcement['name'] = current_date  # 如果公告名称为空，设置为当前日期
 
     with open("live.m3u", "w", encoding="utf-8") as f_m3u:
         # 写入M3U文件头部信息，包括EPG URL列表
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
         with open("live.txt", "w", encoding="utf-8") as f_txt:
-            # for group in config.announcements:  # 遍历配置中的公告组
-            #     f_txt.write(f"{group['channel']},#genre#\n")  # 写入公告的频道分类
-            #     for announcement in group['entries']:  # 遍历每个公告
-            #         f_m3u.write(f"""#EXTINF:-1 tvg-id="1" tvg-name="{announcement['name']}" tvg-logo="{announcement['logo']}" group-title="{group['channel']}",{announcement['name']}\n""")
-            #         f_m3u.write(f"{announcement['url']}\n")
-            #         f_txt.write(f"{announcement['name']},{announcement['url']}\n")
-
             for category, channel_list in template_channels.items():  # 遍历模板中的频道分类
                 f_txt.write(f"{category},#genre#\n")  # 写入每个频道分类
                 if category in channels:  # 如果频道分类存在于获取的频道列表中
                     for channel_name in channel_list:  # 遍历每个频道名称
                         if channel_name in channels[category]:  # 如果频道名称存在于获取的频道分类中
-                            # 按照IP版本优先级对URL进行排序，并过滤掉IPv6项
-                            sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
+                            sorted_urls = sorted(channels[category][channel_name])  # 排序URL列表
                             filtered_urls = []  # 创建一个列表来存储过滤后的URL
                             for url in sorted_urls:  # 遍历排序后的URL
-                                # 如果URL有效且不在已写入的URL集合中，并且不包含于黑名单中，且不是IPv6地址
-                                if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist) and not is_ipv6(url):
+                                # 过滤掉包含 'ipv6' 字样的行
+                                filtered_lines = [line for line in url.splitlines() if 'ipv6' not in line.lower()]
+                                if filtered_lines and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
                                     filtered_urls.append(url)
                                     written_urls.add(url)  # 将URL添加到已写入的URL集合中
 
