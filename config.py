@@ -54,6 +54,7 @@ url_blacklist = [
     "[2409:8087:2001:20:2800:0:df6e:eb24]",
     "2409:8087:2001:20:2800:0:df6e:eb25]:80",
     "[2409:8087:2001:20:2800:0:df6e:eb27]",
+    
     "generationnexxxt.com:19806",
     "110.53.218.182:9902",
     "111.14.181.15:9901",
@@ -72,7 +73,23 @@ url_blacklist = [
     "182.122.73.43:10086",
     "183.133.104.144:8899",
     "183.92.4.163:4000",
-    "1b6467f415.iok.la:9931"
+    "1b6467f415.iok.la:9931",
+    "nb.thkss.com:9981",
+    "jrys.haycker.eu.org:4443",
+    "cdn.jdshipin.com:8880",
+    "ygbh.live",
+    "39.134.66.66",
+    "mail.petzhu.top:7000",
+    "alvin.ergotron.net:8000",
+    "home.huaz.site:4000",
+    "dms.yryyj.site:8188",
+    "dms.yryyj.site:8188",
+    "218.241.192.50:8808",
+    "39.77.3.5:8989",
+    "webmail.axxe.top:4022",
+    "hlsbkmgsplive.miguvideo.com",
+    "22725y284r.yicp.fun:9902",
+    "60.10.139.10:8801"
 ]
 
 announcements = [
