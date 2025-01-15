@@ -27,8 +27,9 @@ source_urls = [
     # "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/live_ipv4.txt",
     "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/ygbh.txt",
     "http://wp.wadg.pro/down.php/d7b52d125998d00e2d2339bac6abd2b5.txt",
-    "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/JJdoudizhu.txt",
-    "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/chs.txt"
+    #"https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/JJdoudizhu.txt",
+    "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/chs.txt".
+    "http://adultiptv.net/chs.m3u"
 ]
 
 url_blacklist = [
