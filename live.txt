@@ -3108,8 +3108,6 @@ NewTV动作电影,http://111.12.101.22:6610/PLTV/77777777/224/3221225703/index.m
 韩·EBS-1,http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/groundwavetablet500k.m3u8
 韩·EBS-1,http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
 韩·EBS-1,http://ebsonairios.ebs.co.kr/plus1tablet500k/tablet500k/plus1tablet500k.index.m3u8
-韩·EBS-2,http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8
-韩·EBS-2,http://ebsonairios.ebs.co.kr/plus2tablet500k/tablet500k/plus2tablet500k.index.m3u8
 韩·EBS少儿,http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/chunklist_w1965791004.m3u8
 韩·SBS,http://1.245.74.5:1935/live/tv/.m3u8
 韩·HotPlusTV,http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
@@ -3139,10 +3137,6 @@ KBS2,P2p://generationnexxxt.com:19806/2738ccfca9bf478fabe58a315dcab4af
 KBS,mitv://generationnexxxt.com:19806/10263d570592484e864bf42334ba5a2f
 KBS,mitv://generationnexxxt.com:19806/0a9a842f13284e848e7aa72af382c176
 KBS,https://livecdn.fptplay.net:443/sdb/kbs_hls.smil/playlist.m3u8
-SBS,mitv://generationnexxxt.com:19806/c8f25b3b0185407792640de06e8781df
-SBS,mitv://generationnexxxt.com:19806/a99ade867d304779a5ac84ab89228575
-SBS,http://ye23.win/iptv/sbs5.1.php?id=S01
-SBS,P2p://generationnexxxt.com:19806/52bdf003e484446f83ee00f00fd5b90f
 JTBC,mitv://generationnexxxt.com:19806/4e234cda667b42a8bc3081db3b08bfce
 JTBC,mitv://generationnexxxt.com:19806/7c397fb18c154c5f91e41a48fd3ab95c
 JTBC,P2p://generationnexxxt.com:19806/4ec82c36dd4043df9f31f0b2ee907277

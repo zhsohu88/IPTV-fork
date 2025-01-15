@@ -6205,10 +6205,6 @@ http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/groundwavetablet500
 http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
 #EXTINF:-1 tvg-id="3" tvg-name="韩·EBS-1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-1.png" group-title="韩国频道",韩·EBS-1
 http://ebsonairios.ebs.co.kr/plus1tablet500k/tablet500k/plus1tablet500k.index.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="韩·EBS-2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-2.png" group-title="韩国频道",韩·EBS-2
-http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8
-#EXTINF:-1 tvg-id="2" tvg-name="韩·EBS-2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS-2.png" group-title="韩国频道",韩·EBS-2
-http://ebsonairios.ebs.co.kr/plus2tablet500k/tablet500k/plus2tablet500k.index.m3u8
 #EXTINF:-1 tvg-id="1" tvg-name="韩·EBS少儿" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·EBS少儿.png" group-title="韩国频道",韩·EBS少儿
 http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/chunklist_w1965791004.m3u8
 #EXTINF:-1 tvg-id="1" tvg-name="韩·SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/韩·SBS.png" group-title="韩国频道",韩·SBS
@@ -6267,14 +6263,6 @@ mitv://generationnexxxt.com:19806/10263d570592484e864bf42334ba5a2f
 mitv://generationnexxxt.com:19806/0a9a842f13284e848e7aa72af382c176
 #EXTINF:-1 tvg-id="3" tvg-name="KBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/KBS.png" group-title="韩国频道",KBS
 https://livecdn.fptplay.net:443/sdb/kbs_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
-mitv://generationnexxxt.com:19806/c8f25b3b0185407792640de06e8781df
-#EXTINF:-1 tvg-id="2" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
-mitv://generationnexxxt.com:19806/a99ade867d304779a5ac84ab89228575
-#EXTINF:-1 tvg-id="3" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
-http://ye23.win/iptv/sbs5.1.php?id=S01
-#EXTINF:-1 tvg-id="4" tvg-name="SBS" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/SBS.png" group-title="韩国频道",SBS
-P2p://generationnexxxt.com:19806/52bdf003e484446f83ee00f00fd5b90f
 #EXTINF:-1 tvg-id="1" tvg-name="JTBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JTBC.png" group-title="韩国频道",JTBC
 mitv://generationnexxxt.com:19806/4e234cda667b42a8bc3081db3b08bfce
 #EXTINF:-1 tvg-id="2" tvg-name="JTBC" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/JTBC.png" group-title="韩国频道",JTBC
