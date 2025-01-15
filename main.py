@@ -48,7 +48,7 @@ def fetch_channels(url):
         source_type = "m3u" if is_m3u else "txt"  # 根据格式类型设置 source_type
         logging.info(f"url: {url} 获取成功，判断为 {source_type} 格式")  # 记录获取成功日志
 
-        if is_m3u:
+        if is_m3u:   # 处理m3u格式
             for line in lines:  # 遍历每一行
                 line = line.strip()  # 去除行首和行尾的空白字符
                 if line.startswith("#EXTINF"):  # 如果行以 #EXTINF 开头
@@ -62,7 +62,7 @@ def fetch_channels(url):
                     channel_url = line.strip()  # 获取频道 URL
                     if current_category and channel_name:
                         channels[current_category].append((channel_name, channel_url))  # 将频道名称和 URL 添加到当前分类的频道列表中
-        else:
+        else:     # 处理txt格式
             for line in lines:  # 遍历每一行
                 line = line.strip()  # 去除行首和行尾的空白字符
                 if "#genre#" in line:  # 如果行中包含 #genre#
