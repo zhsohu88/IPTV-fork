@@ -1,26 +1,26 @@
 import re  # 导入正则表达式模块，用于字符串匹配和处理
-import requests  # 导入requests模块，用于HTTP请求
+import requests  # 导入requests模块，用于进行HTTP请求
 import logging  # 导入日志记录模块，用于记录调试和运行信息
-from collections import OrderedDict  # 从collections模块导入OrderedDict，用于有序字典
+from collections import OrderedDict  # 从collections模块导入OrderedDict类，用于创建有序字典
 from datetime import datetime  # 导入datetime模块，用于处理日期和时间
-import config  # 导入config模块，用于配置文件
+import config  # 导入config模块，用于加载配置文件
 
 # 配置日志记录
 logging.basicConfig(
-    level=logging.INFO, 
-    format='%(asctime)s - %(levelname)s - %(message)s', 
+    level=logging.INFO,  # 设置日志记录级别为INFO
+    format='%(asctime)s - %(levelname)s - %(message)s',  # 设置日志记录格式
     handlers=[
-        logging.FileHandler("function.log", "w", encoding="utf-8"),  # 将日志记录到文件
+        logging.FileHandler("function.log", "w", encoding="utf-8"),  # 将日志记录到文件中
         logging.StreamHandler()  # 将日志输出到控制台
     ]
 )
 
 # 解析模板文件
 def parse_template(template_file):
-    template_channels = OrderedDict()  # 创建一个有序字典，用于存储模板中的频道信息
-    current_category = None  # 初始化当前分类
+    template_channels = OrderedDict()  # 创建一个有序字典用于存储解析后的频道信息
+    current_category = None  # 初始化当前分类变量
 
-    # 读取模板文件
+    # 打开并读取模板文件
     with open(template_file, "r", encoding="utf-8") as f:
         for line in f:  # 遍历文件中的每一行
             line = line.strip()  # 去除行首和行尾的空白字符
@@ -32,27 +32,27 @@ def parse_template(template_file):
                     channel_name = line.split(",")[0].strip()  # 获取频道名称
                     template_channels[current_category].append(channel_name)  # 将频道名称添加到当前分类的频道列表中
 
-    return template_channels  # 返回解析后的模板频道信息
+    return template_channels  # 返回解析后的频道信息
 
 # 获取频道信息
 def fetch_channels(url):
-    channels = OrderedDict()  # 创建一个有序字典，用于存储获取的频道信息
+    channels = OrderedDict()  # 创建一个有序字典用于存储频道信息
 
     try:
         response = requests.get(url)  # 发送HTTP GET请求
-        response.raise_for_status()  # 如果响应状态码不是200，抛出异常
-        response.encoding = 'utf-8'  # 设置响应编码为utf-8
+        response.raise_for_status()  # 如果响应状态码不是200则抛出异常
+        response.encoding = 'utf-8'  # 设置响应编码为UTF-8
         lines = response.text.split("\n")  # 将响应内容按行分割
-        current_category = None  # 初始化当前分类
+        current_category = None  # 初始化当前分类变量
         is_m3u = any("#EXTINF" in line for line in lines[:15])  # 判断是否为m3u格式
         source_type = "m3u" if is_m3u else "txt"  # 根据格式类型设置source_type
-        logging.info(f"url: {url} 获取成功，判断为{source_type}格式")  # 记录日志
+        logging.info(f"url: {url} 获取成功，判断为{source_type}格式")  # 记录获取成功日志
 
         if is_m3u:
             for line in lines:  # 遍历每一行
                 line = line.strip()  # 去除行首和行尾的空白字符
                 if line.startswith("#EXTINF"):  # 如果行以#EXTINF开头
-                    match = re.search(r'group-title="(.*?)",(.*)', line)  # 使用正则表达式匹配group-title和频道名称
+                    match = re.search(r'group-title="(.*?)",(.*)', line)  # 使用正则表达式匹配分类和频道名称
                     if match:
                         current_category = match.group(1).strip()  # 获取当前分类
                         channel_name = match.group(2).strip()  # 获取频道名称
@@ -75,18 +75,18 @@ def fetch_channels(url):
                         channel_url = match.group(2).strip()  # 获取频道URL
                         channels[current_category].append((channel_name, channel_url))  # 将频道名称和URL添加到当前分类的频道列表中
                     elif line:
-                        channels[current_category].append((line, ''))  # 如果只有频道名称没有URL
+                        channels[current_category].append((line, ''))  # 如果行中只有频道名称无URL，则只添加频道名称
         if channels:
             categories = ", ".join(channels.keys())  # 获取所有分类名称
-            logging.info(f"url: {url} 爬取成功✅，包含频道分类: {categories}")  # 记录日志
+            logging.info(f"url: {url} 爬取成功✅，包含频道分类: {categories}")  # 记录爬取成功日志
     except requests.RequestException as e:
-        logging.error(f"url: {url} 爬取失败❌, Error: {e}")  # 记录错误日志
+        logging.error(f"url: {url} 爬取失败❌, Error: {e}")  # 记录爬取失败日志
 
     return channels  # 返回获取的频道信息
 
 # 匹配频道信息
 def match_channels(template_channels, all_channels):
-    matched_channels = OrderedDict()  # 创建一个有序字典，用于存储匹配的频道信息
+    matched_channels = OrderedDict()  # 创建一个有序字典用于存储匹配的频道信息
 
     for category, channel_list in template_channels.items():  # 遍历模板中的每个分类和频道列表
         matched_channels[category] = OrderedDict()  # 初始化当前分类的匹配频道列表
@@ -103,7 +103,7 @@ def filter_source_urls(template_file):
     template_channels = parse_template(template_file)  # 解析模板文件获取模板频道信息
     source_urls = config.source_urls  # 从配置文件中获取来源URL列表
 
-    all_channels = OrderedDict()  # 创建一个有序字典，用于存储所有获取的频道信息
+    all_channels = OrderedDict()  # 创建一个有序字典用于存储所有获取的频道信息
     for url in source_urls:  # 遍历每个来源URL
         fetched_channels = fetch_channels(url)  # 获取频道信息
         for category, channel_list in fetched_channels.items():  # 遍历获取的每个分类和频道列表
@@ -124,11 +124,24 @@ def is_ipv6(url):
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()  # 创建一个集合来存储已写入的URL，以避免重复
 
+    # current_date = datetime.now().strftime("%Y-%m-%d")  # 获取当前日期
+    # for group in config.announcements:  # 遍历配置中的公告组
+    #     for announcement in group['entries']:  # 遍历每个公告
+    #         if announcement['name'] is None:
+    #             announcement['name'] = current_date  # 如果公告名称为空，设置为当前日期
+
     with open("live.m3u", "w", encoding="utf-8") as f_m3u:
         # 写入M3U文件头部信息，包括EPG URL列表
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
         with open("live.txt", "w", encoding="utf-8") as f_txt:
+            # for group in config.announcements:  # 遍历配置中的公告组
+            #     f_txt.write(f"{group['channel']},#genre#\n")  # 写入公告的频道分类
+            #     for announcement in group['entries']:  # 遍历每个公告
+            #         f_m3u.write(f"""#EXTINF:-1 tvg-id="1" tvg-name="{announcement['name']}" tvg-logo="{announcement['logo']}" group-title="{group['channel']}",{announcement['name']}\n""")
+            #         f_m3u.write(f"{announcement['url']}\n")
+            #         f_txt.write(f"{announcement['name']},{announcement['url']}\n")
+
             for category, channel_list in template_channels.items():  # 遍历模板中的频道分类
                 f_txt.write(f"{category},#genre#\n")  # 写入每个频道分类
                 if category in channels:  # 如果频道分类存在于获取的频道列表中
@@ -140,21 +153,32 @@ def updateChannelUrlsM3U(channels, template_channels):
                             for url in sorted_urls:  # 遍历排序后的URL
                                 # 如果URL有效且不在已写入的URL集合中，并且不包含于黑名单中
                                 if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
-                                    filtered_urls.append(url)  # 添加到过滤后的URL列表中
+                                    filtered_urls.append(url)
                                     written_urls.add(url)  # 将URL添加到已写入的URL集合中
 
+                            total_urls = len(filtered_urls)  # 获取过滤后的URL总数
                             for index, url in enumerate(filtered_urls, start=1):  # 遍历过滤后的URL，并从1开始计数
-                                new_url = url  # 生成新的URL
+                                # 注释掉在链接后面加东西的代码
+                                # if is_ipv6(url):
+                                #     url_suffix = f"$LR•IPV6" if total_urls == 1 else f"$LR•IPV6『线路{index}』"
+                                # else:
+                                #     url_suffix = f"$LR•IPV4" if total_urls == 1 else f"$LR•IPV4『线路{index}』"
+                                # if '$' in url:
+                                #     base_url = url.split('$', 1)[0]  # 分割URL，获取基础URL
+                                # else:
+                                #     base_url = url
 
-                                # 写入M3U文件中的频道信息
+                                # new_url = f"{base_url}{url_suffix}"  # 生成新的URL
+                                
+                                new_url = url  # 不对URL进行任何修改
+
                                 f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
                                 f_m3u.write(new_url + "\n")
-                                # 写入TXT文件中的频道信息
                                 f_txt.write(f"{channel_name},{new_url}\n")
 
             f_txt.write("\n")  # 添加空行以分隔不同部分
 
 if __name__ == "__main__":
-    template_file = "demo.txt"
-    channels, template_channels = filter_source_urls(template_file)
-    updateChannelUrlsM3U(channels, template_channels)
+    template_file = "demo.txt"  # 模板文件名
+    channels, template_channels = filter_source_urls(template_file)  # 过滤来源URL并匹配频道信息
+    updateChannelUrlsM3U(channels, template_channels)  # 更新频道URL到M3U文件
