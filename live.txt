@@ -1197,55 +1197,9 @@ TBS,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd04&isp=
 TBS,https://tbs4.mov3.co/hls/tbs.m3u8
 TBS,https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
 娱乐频道,#genre#
-JJ斗地主,http://159.75.85.63:35455/douyu/488743
-JJ斗地主,http://openhls-tct.douyucdn2.cn:80/dyliveflv1a/488743rAHScWyyII_2000.m3u8
 JJ斗地主,http://tc-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII_2000.flv?wsAuth=fd695c444eeee99cc6122ed396c805ba&token=cpn-androidmpro-0-488743-
 JJ斗地主,http://tc-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII_2000.flv?wsAuth=fd695c444eeee99cc6122ed396c805ba&token=cpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901&logo=0&expire=0&did=d010b07dcb997ada9934081c873542f0&origin=tct&vhost=play2
 JJ斗地主,http://tc-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII_2000.flv?wsAuth=fd545c444eeee99cc6122ed396c805ba&token=cpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901&logo=0&expire=0&did=d010b07dcb997ada9934081c873542f0&origin=tct&vhost=play2
-JJ斗地主,http://111.20.21.163/live/488743rAHScWyyII_2000.flv?302_type=cold_aggr&_session_id=1343553445.n.cn-z9w724.mt5f_1421068&cac=1&cb_retry=0&did=d010b07dcb997ada9934081c873542f0&domain=tc-tct.douyucdn2.cn&expire=0&fp_user_url=http%3A%2F%2Ftc-tct.douyucdn2.cn%2Fdyliveflv1a%2F488743rAHScWyyII_2000.flv%3FwsAuth%3Dfd695c444eeee99cc6122ed396c805ba%26token%3Dcpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901%26logo%3D0%26expire%3D0%26did%3Dd010b07dcb997ada9934081c873542f0%26origin%3Dtct%26vhost%3Dplay2&logo=0&manage_ip=&node_id=&origin=tct&pro_type=http&redirect_from=pod.cn-z9w724.mt5f.nss&redirect_from_ip=183.201.192.138&redirect_to=fc.cn-h58z42&redirect_to_ip=111.20.21.163&token=cpn-androidmpro-0-488743-df8b1830ef2e6ce156759645768df95bf77749da61fcc901&vhost=tc-tct.douyucdn2.cn&wsAuth=fd695c444eeee99cc6122ed396c805ba
-JJ斗地主,http://openhls-tct.douyucdn2.cn/dyliveflv1a/488743rAHScWyyII.m3u8?txSecret=e0a0c43bb68f52c71715cfaf0d54dee7&txTime=677ff1a0&token=cph-androidmpro-0-488743-8f824fc718143899a47519beaf09cd4d&did=10000000000000000000000000001501&origin=tct&vhost=play2&sid=407024163
 成人直播_9,#genre#
-Teen Girls,http://live.mycamtv.com/teen.m3u8
-MILF,http://live.mycamtv.com/milf.m3u8
-MILF,http://cdn.adultiptv.net/milf.m3u8
-Young Girls,http://live.mycamtv.com/young.m3u8
-Mature,http://live.mycamtv.com/bigtits.m3u8
-Arab Girls,http://live.mycamtv.com/arab.m3u8
-Ebony Girls,http://live.mycamtv.com/ebony.m3u8
-Asian Girls,http://live.mycamtv.com/asian.m3u8
-Brunette Girls,http://live.mycamtv.com/brunette.m3u8
-Latina Girls,http://live.mycamtv.com/latina.m3u8
-White Girls,http://live.mycamtv.com/white.m3u8
-Blonde Girls,http://live.mycamtv.com/blonde.m3u8
-Anal,http://live.mycamtv.com/anal.m3u8
-Anal,http://cdn.adultiptv.net/anal.m3u8
-Big Ass Girls,http://live.mycamtv.com/bigass.m3u8
-Girls Squirt,http://live.mycamtv.com/squirt.m3u8
-Skinny Girls,http://live.mycamtv.com/skinny.m3u8
-Medium Girls,http://live.mycamtv.com/medium.m3u8
-Blowjob,http://live.mycamtv.com/blowjob.m3u8
-Blowjob,http://cdn.adultiptv.net/blowjob.m3u8
 成人点播_9,#genre#
-Live Cams,http://cdn.adultiptv.net/livecams.m3u8
-Big Dick,http://cdn.adultiptv.net/bigdick.m3u8
-Big Tits,http://cdn.adultiptv.net/bigtits.m3u8
-Fetish,http://cdn.adultiptv.net/fetish.m3u8
-Pornstar,http://cdn.adultiptv.net/pornstar.m3u8
-Big Ass,http://cdn.adultiptv.net/bigass.m3u8
-Interracial,http://cdn.adultiptv.net/interracial.m3u8
-Latina,http://cdn.adultiptv.net/latina.m3u8
-POV,http://cdn.adultiptv.net/pov.m3u8
-Teen,http://cdn.adultiptv.net/teen.m3u8
-Hardcore,http://cdn.adultiptv.net/hardcore.m3u8
-Cuckold,http://cdn.adultiptv.net/cuckold.m3u8
-Threesome,http://cdn.adultiptv.net/threesome.m3u8
-Russian,http://cdn.adultiptv.net/russian.m3u8
-Lesbian,http://cdn.adultiptv.net/lesbian.m3u8
-Rough,http://cdn.adultiptv.net/rough.m3u8
-Gangbang,http://cdn.adultiptv.net/gangbang.m3u8
-Compilation,http://cdn.adultiptv.net/compilation.m3u8
-Brunette,http://cdn.adultiptv.net/brunette.m3u8
-Blonde,http://cdn.adultiptv.net/blonde.m3u8
-Gay,http://cdn.adultiptv.net/gay.m3u8
-Asian,http://cdn.adultiptv.net/asian.m3u8
 
