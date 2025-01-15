@@ -136,22 +136,11 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     filtered_urls.append(url)  # 添加到过滤后的URL列表中
                                     written_urls.add(url)  # 将URL添加到已写入的URL集合中
 
-                            total_urls = len(filtered_urls)  # 获取过滤后的URL总数
                             for index, url in enumerate(filtered_urls, start=1):  # 遍历过滤后的URL，并从1开始计数
-                                # 根据IP版本生成URL后缀
-                                if is_ipv6(url):
-                                    url_suffix = f"$LR•IPV6" if total_urls == 1 else f"$LR•IPV6『线路{index}』"
-                                else:
-                                    url_suffix = f"$LR•IPV4" if total_urls == 1 else f"$LR•IPV4『线路{index}』"
-                                if '$' in url:
-                                    base_url = url.split('$', 1)[0]  # 分割URL，获取基础URL
-                                else:
-                                    base_url = url
-
-                                new_url = f"{base_url}{url_suffix}"  # 生成新的URL
+                                new_url = url  # 生成新的URL
 
                                 # 写入M3U文件中的频道信息
-                                f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n""")
+                                f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
                                 f_m3u.write(new_url + "\n")
                                 # 写入TXT文件中的频道信息
                                 f_txt.write(f"{channel_name},{new_url}\n")
