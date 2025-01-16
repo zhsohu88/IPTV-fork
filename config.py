@@ -11,11 +11,8 @@ source_urls = [
     # "http://xhztv.top/zbc.txt",
     # "https://raw.githubusercontent.com/qingwen07/awesome-iptv/main/tvbox_live_all.txt",
     # "https://raw.githubusercontent.com/Guovin/TV/gd/output/result.txt",
-    
-    # "http://home.jundie.top:81/Cat/tv/live.txt",
     # "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/hd.txt",
     # "https://cdn.jsdelivr.net/gh/YueChan/live@main/IPTV.m3u",
-    # "https://raw.githubusercontent.com/cymz6/AutoIPTV-Hotel/main/lives.txt",
     # "https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/live.txt",
     # "https://fm1077.serv00.net/SmartTV.m3u",
     # "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt",
