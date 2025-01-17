@@ -25,7 +25,7 @@ source_urls = [
     "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/chs.txt"           # 成人
     "http://106.53.99.30/8.txt",     # 电视家9
     "https://ygbh.site/bh.txt",      # 月光宝盒
-    "https://raw.githubusercontent.com/chuzjie/wuihui/main/%E5%B0%8F%E7%B1%B3/DSJ240101.txt",     # NEW直播
+    "https://raw.githubusercontent.com/chuzjie/wuihui/main/小米/DSJ240101.txt",     # NEW直播
     "https://4708.kstore.space/omg/tv.txt",     # 拾光电视
     "https://gitlab.com/tvkj/loong/-/raw/main/loog.txt"    # 七星itv
 ]
