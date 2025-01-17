@@ -2478,7 +2478,13 @@ https://live.ybtvyun.com/video/s10006-2f92b9e0b123/index.m3u8
 #EXTINF:-1 tvg-id="14" tvg-name="延边卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/延边卫视.png" group-title="卫视频道",延边卫视
 http://php.666230.xyz/公众号【睡眼迷离的猫】/proxy/p26.php?id=117
 #EXTINF:-1 tvg-id="1" tvg-name="大连综合" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/大连综合.png" group-title="地方频道",大连综合
+http://live.dltv.cn/tcb3IB5/500/017hc43.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="大连综合" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/大连综合.png" group-title="地方频道",大连综合
 http://php.666230.xyz/公众号【睡眼迷离的猫】/proxy/p26.php?id=273
+#EXTINF:-1 tvg-id="1" tvg-name="大连生活" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/大连生活.png" group-title="地方频道",大连生活
+http://live.dltv.cn/JzcFkF4/500/314hz4F.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="大连文体" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/大连文体.png" group-title="地方频道",大连文体
+http://live.dltv.cn/hxT7Fc3/500/johx45m.m3u8
 #EXTINF:-1 tvg-id="1" tvg-name="东森幼幼" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/东森幼幼.png" group-title="少儿频道",东森幼幼
 http://50.7.234.10:8278/yoyo_twn/playlist.m3u8?ct=17874&tid=m84c9b210bc7f11269156&tsum=51340c8fb7ca02ab978ee0791843501d
 #EXTINF:-1 tvg-id="1" tvg-name="卡酷少儿" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/卡酷少儿.png" group-title="少儿频道",卡酷少儿
