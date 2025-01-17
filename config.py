@@ -20,7 +20,7 @@ source_urls = [
     
     # "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/live_ipv4.txt",
     # "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/ygbh.txt",
-    "http://wp.wadg.pro/down.php/d7b52d125998d00e2d2339bac6abd2b5.txt",            # 小苹果，蜗牛线路[测试2]
+    # "http://wp.wadg.pro/down.php/d7b52d125998d00e2d2339bac6abd2b5.txt",            # 小苹果，蜗牛线路[测试2]
     "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/JJdoudizhu.txt",    # 自己的JJ斗地主
     "https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/chs.txt"           # 成人
     "http://106.53.99.30/8.txt",     # 电视家9
